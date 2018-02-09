@@ -79,7 +79,18 @@ public class IntArrayWorker
     }
     System.out.println();
   }
-  
+  public int getCount(int a)
+  {
+    int row = 0;
+    int col = 0;
+    int count = 0;
+    for(int row = 0 <matrix.length; row++
+    for(int col = 0; col < matrix[0].length ; col++
+    if(matrix[row[col] == a  )
+      count ++ ;
+
+    return count
+  }
   
   /** 
    * fill the array with a pattern
@@ -100,5 +111,6 @@ public class IntArrayWorker
       }
     }
   }
- 
+
+
 }

@@ -227,8 +227,7 @@ public class Picture extends SimplePicture
   {
     Picture beach = new Picture("beach.jpg");
     beach.explore();
-    beach.zeroBlue();
-    beach.explore();
+    beach.edgeDetection(50);
   }
   
 } // this } is the end of class Picture, put all new methods before this

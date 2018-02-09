@@ -57,9 +57,14 @@ public class PictureTester
     * method in Java */
   public static void main(String[] args)
   {
+    Picture beach = new Picture("beach.jpg");
+    beach.edgeDetection(20);
+    beach.explore();
+    Picture beach2 = new Picture("beach.jpg");
+    beach2.explore();
     // uncomment a call here to run a test
     // and comment out the ones you don't want
-    // to run
+    //to run
     testZeroBlue();
     //testKeepOnlyBlue();
     //testKeepOnlyRed();

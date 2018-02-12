@@ -99,7 +99,18 @@ public class Picture extends SimplePicture
       }
     }
   }
-  
+  public void keepOnlyBlue()
+  {
+    Pixel[][] pixels = this.getPixels2D();
+    for (Pixel[] rowArray : pixels)
+    {
+      for (Pixel pixelObj : rowArray)
+      {
+        pixelObj.setBlue(255);
+      }
+    }
+  }
+
   /** Method that mirrors the picture around a 
     * vertical mirror in the center of the picture
     * from left to right */
@@ -228,6 +239,7 @@ public class Picture extends SimplePicture
     Picture beach = new Picture("beach.jpg");
     beach.explore();
     beach.edgeDetection(50);
+
   }
   
 } // this } is the end of class Picture, put all new methods before this
